@@ -1,3 +1,4 @@
+import { Hero } from './../hero/hero';
 import { Component, OnInit } from '@angular/core';
 import { Router }            from '@angular/router';
 
@@ -13,7 +14,7 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
 import { HeroSearchService } from './hero-search.service';
-import { Hero }              from './hero';
+
 
 @Component({
   selector: 'hero-search',

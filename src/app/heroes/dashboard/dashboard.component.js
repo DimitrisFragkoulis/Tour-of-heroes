@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var hero_service_1 = require("./../shared/hero.service");
 var core_1 = require("@angular/core");
-var hero_service_1 = require("./hero.service");
 var DashboardComponent = (function () {
     function DashboardComponent(heroService) {
         this.heroService = heroService;
@@ -24,12 +24,11 @@ var DashboardComponent = (function () {
 }());
 DashboardComponent = __decorate([
     core_1.Component({
-        selector: 'my-dashboard',
+        // selector: 'my-dashboard',
         templateUrl: './dashboard.component.html',
         styleUrls: ['./dashboard.component.css']
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof hero_service_1.HeroService !== "undefined" && hero_service_1.HeroService) === "function" && _a || Object])
+    __metadata("design:paramtypes", [hero_service_1.HeroService])
 ], DashboardComponent);
 exports.DashboardComponent = DashboardComponent;
-var _a;
 //# sourceMappingURL=dashboard.component.js.map

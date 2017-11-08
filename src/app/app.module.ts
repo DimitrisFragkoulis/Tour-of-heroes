@@ -1,3 +1,4 @@
+import { HeroSearchService } from './heroes/search/hero-search.service';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
@@ -5,14 +6,14 @@ import { HttpModule }    from '@angular/http';
 
 import { AppRoutingModule }     from './app-routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service';
+import { InMemoryDataService }  from './heroes/shared/in-memory-data.service';
 
 import { AppComponent }         from './app.component';
-import { DashboardComponent }   from './dashboard.component';
-import { HeroesComponent }      from './heroes.component';
-import { HeroDetailComponent }  from './hero-detail.component';
-import { HeroService }          from './hero.service';
-import { HeroSearchComponent }  from './hero-search.component';
+import { DashboardComponent }   from './heroes/dashboard/dashboard.component';
+import { HeroesComponent }      from './heroes/hero/heroes.component';
+import { HeroDetailComponent }  from './heroes/hero-detail/hero-detail.component';
+import { HeroService }          from './heroes/shared/hero.service';
+import { HeroSearchComponent }  from './heroes/search/hero-search.component';
 
 @NgModule({
   imports: [
@@ -29,7 +30,7 @@ import { HeroSearchComponent }  from './hero-search.component';
     HeroesComponent,
     HeroSearchComponent
   ],
-  providers: [ HeroService ],
+  providers: [ HeroService, HeroSearchService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
