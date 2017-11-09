@@ -1,3 +1,4 @@
+import { Assignment1Component } from './heroes/Assignment1/Assignment1.component';
 import { HeroSearchService } from './heroes/search/hero-search.service';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -24,6 +25,7 @@ import { HeroSearchComponent }  from './heroes/search/hero-search.component';
     AppRoutingModule
   ],
   declarations: [
+    Assignment1Component,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
