@@ -11,12 +11,16 @@ var dashboard_component_1 = require("./heroes/dashboard/dashboard.component");
 var heroes_component_1 = require("./heroes/hero/heroes.component");
 var hero_detail_component_1 = require("./heroes/hero-detail/hero-detail.component");
 var Assignment1_component_1 = require("./heroes/Assignment1/Assignment1.component");
+var Assignment2_component_1 = require("./heroes/Assignment2/Assignment2.component");
+var Assignment3_component_1 = require("./heroes/Assignment3/Assignment3.component");
 var routes = [
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent },
     { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
     { path: 'heroes', component: heroes_component_1.HeroesComponent },
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'Assignment1', component: Assignment1_component_1.Assignment1Component }
+    { path: 'Assignment1', component: Assignment1_component_1.Assignment1Component },
+    { path: 'Assignment2', component: Assignment2_component_1.Assignment2Component },
+    { path: 'Assignment3', component: Assignment3_component_1.Assignment3Component }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

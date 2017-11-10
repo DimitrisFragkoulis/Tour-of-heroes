@@ -1,0 +1,43 @@
+.asc {
+  margin: 100px;
+  border: 1px solid #020202;
+  background-color: darkgray;
+  height: 641px;
+
+  
+} 
+h6 {
+    font-size: x-large;
+    text-align: center;
+    color: black;
+  }
+  .imgtext img {
+    margin-top: 78px;
+    margin-bottom: 50px;
+    width: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.imgtext p {
+  font-size: large;
+  color: black;
+  margin-left: 20px;
+}
+.container {
+  text-align: center;
+}
+.container img {
+    margin: 15px;
+    width: 306px;
+}
+button {
+  position: relative;
+  left: 20px;
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}

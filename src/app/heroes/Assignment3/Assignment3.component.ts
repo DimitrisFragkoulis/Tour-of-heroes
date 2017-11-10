@@ -4,11 +4,13 @@ import { Location }  from '@angular/common';
 
 
 @Component({
-    selector: 'Assignment1',
-    templateUrl: './Assignment1.component.html',
-    styleUrls: [ './Assignment1.component.css' ]
+    selector: 'Assignment3',
+    templateUrl: './Assignment3.component.html',
+    styleUrls: [ './Assignment3.component.css' ]
   })
-  export class Assignment1Component {
+  
+
+  export class Assignment3Component {
     constructor(
       private location: Location
     ) {}
@@ -17,3 +19,4 @@ import { Location }  from '@angular/common';
       this.location.back();
     }
   }
+

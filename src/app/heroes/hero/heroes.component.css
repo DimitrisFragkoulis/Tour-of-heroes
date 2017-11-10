@@ -1,5 +1,5 @@
 .selected {
-    background-color: #CFD8DC !important;
+    background-color: #039be5 !important;
     color: white;
   }
   .heroes {
@@ -19,7 +19,7 @@
     border-radius: 4px;
   }
   .heroes li:hover {
-    color: #607D8B;
+    color: #039be5;
     background-color: #DDD;
     left: .1em;
   }
@@ -36,7 +36,7 @@
     font-size: small;
     color: white;
     padding: 0.8em 0.7em 0 0.7em;
-    background-color: #607D8B;
+    background-color: #039be5;
     line-height: 1em;
     position: relative;
     left: -1px;
@@ -61,6 +61,6 @@
     float:right;
     margin-top: 2px;
     margin-right: .8em;
-    background-color: gray !important;
+    background-color: #039be5 !important;
     color:white;
   }

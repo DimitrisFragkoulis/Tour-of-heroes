@@ -10,22 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
-var Assignment1Component = (function () {
-    function Assignment1Component(location) {
+var Assignment3Component = (function () {
+    function Assignment3Component(location) {
         this.location = location;
     }
-    Assignment1Component.prototype.goBack = function () {
+    Assignment3Component.prototype.goBack = function () {
         this.location.back();
     };
-    return Assignment1Component;
+    return Assignment3Component;
 }());
-Assignment1Component = __decorate([
+Assignment3Component = __decorate([
     core_1.Component({
-        selector: 'Assignment1',
-        templateUrl: './Assignment1.component.html',
-        styleUrls: ['./Assignment1.component.css']
+        selector: 'Assignment3',
+        templateUrl: './Assignment3.component.html',
+        styleUrls: ['./Assignment3.component.css']
     }),
     __metadata("design:paramtypes", [common_1.Location])
-], Assignment1Component);
-exports.Assignment1Component = Assignment1Component;
-//# sourceMappingURL=Assignment1.component.js.map
+], Assignment3Component);
+exports.Assignment3Component = Assignment3Component;
+//# sourceMappingURL=Assignment3.component.js.map

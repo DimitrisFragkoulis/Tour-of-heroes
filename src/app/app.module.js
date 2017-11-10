@@ -5,6 +5,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var Assignment3_component_1 = require("./heroes/Assignment3/Assignment3.component");
+var Assignment2_component_1 = require("./heroes/Assignment2/Assignment2.component");
 var Assignment1_component_1 = require("./heroes/Assignment1/Assignment1.component");
 var hero_search_service_1 = require("./heroes/search/hero-search.service");
 var core_1 = require("@angular/core");
@@ -36,6 +38,8 @@ AppModule = __decorate([
         ],
         declarations: [
             Assignment1_component_1.Assignment1Component,
+            Assignment2_component_1.Assignment2Component,
+            Assignment3_component_1.Assignment3Component,
             app_component_1.AppComponent,
             dashboard_component_1.DashboardComponent,
             hero_detail_component_1.HeroDetailComponent,

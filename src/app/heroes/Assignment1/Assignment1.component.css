@@ -1,8 +1,10 @@
 .asc {
   margin: 100px;
   border: 1px solid #020202;
+  background-color: darkgray;
 } 
 h5 {
+  color: black;
     font-size: x-large;
     text-align: center;
   }
@@ -11,6 +13,8 @@ p{
   font-size: medium;
   position: relative;
   text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 img {
   width: 300px;

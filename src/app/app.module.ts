@@ -1,3 +1,5 @@
+import { Assignment3Component } from './heroes/Assignment3/Assignment3.component';
+import { Assignment2Component } from './heroes/Assignment2/Assignment2.component';
 import { Assignment1Component } from './heroes/Assignment1/Assignment1.component';
 import { HeroSearchService } from './heroes/search/hero-search.service';
 import { NgModule }      from '@angular/core';
@@ -26,6 +28,8 @@ import { HeroSearchComponent }  from './heroes/search/hero-search.component';
   ],
   declarations: [
     Assignment1Component,
+    Assignment2Component,
+    Assignment3Component,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
