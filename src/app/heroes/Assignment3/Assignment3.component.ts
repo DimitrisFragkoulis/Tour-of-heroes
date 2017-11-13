@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
 import { Location }  from '@angular/common';
+import {Component, OnInit, NgModule} from '@angular/core'
+import {BrowserModule} from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -9,14 +11,38 @@ import { Location }  from '@angular/common';
     styleUrls: [ './Assignment3.component.css' ]
   })
   
-
-  export class Assignment3Component {
-    constructor(
-      private location: Location
-    ) {}
+  export class Assignment3Component implements OnInit {
     
-    goBack(): void {
-      this.location.back();
+      
+      public ngOnInit() {
+    
+        this.color = [
+          { colorId: 1, name: "Red" },
+          { colorId: 2, name: "Blue" },
+          { colorId: 3, name: "Black" }
+        ]
+      
+      }
+      
+      
+      public color: Color[];
+      public selectedColor: color;  
+      
+      public selectByName(name: string) {
+        this.selectedColor = this.color.find(color => color.name === name);
+      }
+      
+      
     }
-  }
-
+    
+    export class Color {
+      public colorId: number;
+      public name: string;
+    }
+    
+  @NgModule({
+    imports: [ BrowserModule, FormsModule ],
+    declarations: [ Assignment3Component ],
+    bootstrap: [ Assignment3Component ]
+  })
+  export class color {}

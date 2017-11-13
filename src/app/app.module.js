@@ -44,10 +44,11 @@ AppModule = __decorate([
             dashboard_component_1.DashboardComponent,
             hero_detail_component_1.HeroDetailComponent,
             heroes_component_1.HeroesComponent,
-            hero_search_component_1.HeroSearchComponent
+            hero_search_component_1.HeroSearchComponent,
+            Assignment3_component_1.Assignment3Component
         ],
         providers: [hero_service_1.HeroService, hero_search_service_1.HeroSearchService],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent, Assignment3_component_1.Assignment3Component]
     })
 ], AppModule);
 exports.AppModule = AppModule;

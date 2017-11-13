@@ -34,9 +34,10 @@ import { HeroSearchComponent }  from './heroes/search/hero-search.component';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    Assignment3Component
   ],
   providers: [ HeroService, HeroSearchService ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent, Assignment3Component ]
 })
 export class AppModule { }

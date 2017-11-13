@@ -1,8 +1,10 @@
 .asc{
-  margin: 100px;
+  margin: 343px;
   border: 1px solid #020202;
   background-color: darkgray;
   height: 641px;
+  position: relative;
+  top: -264px;
 }
 h1
  {
@@ -36,10 +38,7 @@ h1
     color: rgb(0, 0, 0);
     top: 100px;
   }
-  div#Assignment3Background{
-    font-size: -webkit-xxx-large;
   
-  }
   button {
     bottom: -370px;
     position: relative;
@@ -52,3 +51,4 @@ h1
     border-radius: 4px;
     cursor: pointer; cursor: hand;
   }
+  
