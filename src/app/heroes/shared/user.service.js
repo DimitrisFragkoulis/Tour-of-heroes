@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var Assignment4Component = (function () {
-    function Assignment4Component() {
+var http_1 = require("@angular/http");
+require("rxjs/add/operator/map");
+var UserService = (function () {
+    function UserService(http) {
+        this.http = http;
     }
-    return Assignment4Component;
+    UserService.prototype.getUser = function () {
+        return this.http.get("https://ipinfo.io/json")
+            .map(function (res) { return res.json(); });
+    };
+    return UserService;
 }());
-Assignment4Component = __decorate([
-    core_1.Component({
-        selector: 'Assignment4',
-        templateUrl: './Assignment4.component.html',
-        styleUrls: ['./Assignment4.component.css']
-    }),
-    __metadata("design:paramtypes", [])
-], Assignment4Component);
-exports.Assignment4Component = Assignment4Component;
-//# sourceMappingURL=Assignment4component.js.map
+UserService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], UserService);
+exports.UserService = UserService;
+//# sourceMappingURL=user.service.js.map

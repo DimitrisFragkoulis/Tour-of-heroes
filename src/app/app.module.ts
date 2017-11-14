@@ -1,3 +1,5 @@
+import { Assignment4Component } from './heroes/Assignment4/Assignment4.component';
+
 import { Assignment3Component } from './heroes/Assignment3/Assignment3.component';
 import { Assignment2Component } from './heroes/Assignment2/Assignment2.component';
 import { Assignment1Component } from './heroes/Assignment1/Assignment1.component';
@@ -30,12 +32,12 @@ import { HeroSearchComponent }  from './heroes/search/hero-search.component';
     Assignment1Component,
     Assignment2Component,
     Assignment3Component,
+    Assignment4Component,
     AppComponent,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent,
-    Assignment3Component
   ],
   providers: [ HeroService, HeroSearchService ],
   bootstrap: [ AppComponent, Assignment3Component ]
