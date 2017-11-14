@@ -4,17 +4,17 @@
             <form>
                     <select [(ngModel)]="selectedColor" 
                             name="selectedColor">
-                        <option [ngValue]="null">Please choose...</option>
+                        <option [ngValue]="null">Please Choose...</option>
                         <option *ngFor="let c of color"
                                 [ngValue]="c"
                                 [attr.selected]="c.colorId === selectedColor?.colorId ? true : null ">{{c.name}}</option>
                     </select>
                    
                 </form>  
-    <p>The selected color is {{selectedColor?.name}}</p>
+    <div [ngStyle]="{'background-color': selectedColor?.name }">The selected color is {{selectedColor?.name}}</div>
     </div>
-    <div>
+    
         <p>Please select a color</p>
-    </div>
+    
     <button (click)="goBack()">Back</button>
 </div>

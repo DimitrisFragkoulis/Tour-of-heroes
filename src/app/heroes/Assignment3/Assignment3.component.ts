@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
   })
   
   export class Assignment3Component implements OnInit {
+  
     
       
       public ngOnInit() {
@@ -19,9 +20,8 @@ import { FormsModule } from '@angular/forms';
         this.color = [
           { colorId: 1, name: "Red" },
           { colorId: 2, name: "Blue" },
-          { colorId: 3, name: "Black" }
-        ]
-      
+          { colorId: 3, name: "Black"}
+        ]  
       }
       
       
@@ -31,7 +31,15 @@ import { FormsModule } from '@angular/forms';
       public selectByName(name: string) {
         this.selectedColor = this.color.find(color => color.name === name);
       }
-      
+
+      constructor(
+        private location: Location
+      ) {}
+
+      goBack(): void {
+        this.location.back();
+      }
+    
       
     }
     
@@ -39,6 +47,8 @@ import { FormsModule } from '@angular/forms';
       public colorId: number;
       public name: string;
     }
+   
+
     
   @NgModule({
     imports: [ BrowserModule, FormsModule ],
@@ -46,3 +56,4 @@ import { FormsModule } from '@angular/forms';
     bootstrap: [ Assignment3Component ]
   })
   export class color {}
+ 
