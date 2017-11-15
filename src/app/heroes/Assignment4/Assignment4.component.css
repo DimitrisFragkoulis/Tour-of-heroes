@@ -1,0 +1,14 @@
+h2 {
+    font-size: x-large;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+.Data {
+ color:rgb(242, 245, 248);
+ text-align: center;
+ font-size: xx-large;
+ position: relative;
+ left: 588px;
+ top: 100px;
+}

@@ -26,7 +26,7 @@ import { FormsModule } from '@angular/forms';
       
       
       public color: Color[];
-      public selectedColor: color;  
+      public selectedColor: Color;  
       
       public selectByName(name: string) {
         this.selectedColor = this.color.find(color => color.name === name);
@@ -48,12 +48,3 @@ import { FormsModule } from '@angular/forms';
       public name: string;
     }
    
-
-    
-  @NgModule({
-    imports: [ BrowserModule, FormsModule ],
-    declarations: [ Assignment3Component ],
-    bootstrap: [ Assignment3Component ]
-  })
-  export class color {}
- 

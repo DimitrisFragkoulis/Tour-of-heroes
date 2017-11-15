@@ -1,6 +1,6 @@
 import { UserService } from './../shared/user.service';
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -8,13 +8,19 @@ import { Component } from '@angular/core';
   templateUrl: './Assignment4.component.html',
   styleUrls: [ './Assignment4.component.css' ]
 })
-export class Assignment4Component {
-  // constructor(private userService: UserService) {}
-  // profile = {};
+export class Assignment4Component implements OnInit{
+  constructor(private userService: UserService) {}
+  profile = {};
 
-  // loadUser() {
-  //   this.userService.getUser().subscribe(data => this.profile = data);
-  // }
+  ngOnInit(): void {
+    
+      this.userService.getUser()
+      .subscribe(
+           data => {
+            this.profile = data ;
+            console.log(this.profile);
+          });
+  }
+  
+
 }
-
-

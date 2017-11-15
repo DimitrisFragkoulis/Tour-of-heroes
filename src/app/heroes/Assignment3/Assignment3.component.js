@@ -10,8 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var common_1 = require("@angular/common");
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var forms_1 = require("@angular/forms");
 var Assignment3Component = (function () {
     function Assignment3Component(location) {
         this.location = location;
@@ -46,17 +44,4 @@ var Color = (function () {
     return Color;
 }());
 exports.Color = Color;
-var color = (function () {
-    function color() {
-    }
-    return color;
-}());
-color = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [Assignment3Component],
-        bootstrap: [Assignment3Component]
-    })
-], color);
-exports.color = color;
 //# sourceMappingURL=Assignment3.component.js.map

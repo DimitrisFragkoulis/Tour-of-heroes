@@ -1,5 +1,20 @@
 <h2>JavaScript - HTTP Requests - Objects - JSON Data</h2>
-<div>
-    <button (click)="loadUser()">Load profile</button>
-    {{ profile | json }}
+<div class="Data">
+    <table border="3">
+        <thead>
+            <tr>
+            <th>Ip</th>
+            <th>Country</th>
+            <th>Org</th>
+          </tr>
+        </thead>
+      <tbody>
+        
+        <tr>
+          <td>{{profile.ip}}</td>
+          <td>{{profile.country}}</td>
+          <td>{{profile.org}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>

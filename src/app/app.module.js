@@ -15,14 +15,13 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_routing_module_1 = require("./app-routing.module");
-var angular_in_memory_web_api_1 = require("angular-in-memory-web-api");
-var in_memory_data_service_1 = require("./heroes/shared/in-memory-data.service");
 var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./heroes/dashboard/dashboard.component");
 var heroes_component_1 = require("./heroes/hero/heroes.component");
 var hero_detail_component_1 = require("./heroes/hero-detail/hero-detail.component");
 var hero_service_1 = require("./heroes/shared/hero.service");
 var hero_search_component_1 = require("./heroes/search/hero-search.component");
+var user_service_1 = require("./heroes/shared/user.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -34,8 +33,7 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             forms_1.FormsModule,
             http_1.HttpModule,
-            angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService),
-            app_routing_module_1.AppRoutingModule
+            app_routing_module_1.AppRoutingModule,
         ],
         declarations: [
             Assignment1_component_1.Assignment1Component,
@@ -48,8 +46,8 @@ AppModule = __decorate([
             heroes_component_1.HeroesComponent,
             hero_search_component_1.HeroSearchComponent,
         ],
-        providers: [hero_service_1.HeroService, hero_search_service_1.HeroSearchService],
-        bootstrap: [app_component_1.AppComponent, Assignment3_component_1.Assignment3Component]
+        providers: [hero_service_1.HeroService, hero_search_service_1.HeroSearchService, user_service_1.UserService],
+        bootstrap: [app_component_1.AppComponent, Assignment3_component_1.Assignment3Component,]
     })
 ], AppModule);
 exports.AppModule = AppModule;
