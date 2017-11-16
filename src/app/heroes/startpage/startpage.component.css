@@ -1,0 +1,37 @@
+  a {
+      font-size: x-large;
+      height: auto;
+      text-align: center;
+  }
+  .col-1-4 {
+    width: 11%;
+    position: relative;
+    text-align: center;
+    left: 503px;
+    top: 60px;
+}
+  .grid-pad {
+    padding: 10px 0;
+  }
+
+  .startpageContent {
+    width: 1300px;
+    font-size: larger;
+    border-radius: 20px;
+    text-align: justify;
+    margin-top: 150px;
+    background-color: #efefef;
+    color: #000000;
+    padding: 10px;
+    margin-left: 300px;
+}
+  .startpageContent img {
+    border-radius: 45px;
+    width: 250px;
+    margin: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+ 

@@ -4,11 +4,18 @@ h2 {
     color: rgb(255, 255, 255);
   }
 
-.Data {
+.data {
  color:rgb(242, 245, 248);
  text-align: center;
  font-size: xx-large;
  position: relative;
  left: 588px;
  top: 100px;
+}
+tr {
+  height: 127px;
+}
+table {
+  background-color: #b3b3b3;
+  color: dodgerblue;
 }

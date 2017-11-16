@@ -13,12 +13,10 @@ export class Assignment4Component implements OnInit{
   profile = {};
 
   ngOnInit(): void {
-    
-      this.userService.getUser()
+    this.userService.getData()
       .subscribe(
            data => {
             this.profile = data ;
-            console.log(this.profile);
           });
   }
   

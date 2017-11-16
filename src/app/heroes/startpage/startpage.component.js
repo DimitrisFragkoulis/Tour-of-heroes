@@ -8,29 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var user_service_1 = require("./../shared/user.service");
+var hero_service_1 = require("./../shared/hero.service");
 var core_1 = require("@angular/core");
-var Assignment4Component = (function () {
-    function Assignment4Component(userService) {
-        this.userService = userService;
-        this.profile = {};
+var StartpageComponent = (function () {
+    function StartpageComponent(heroService) {
+        this.heroService = heroService;
+        this.heroes = [];
     }
-    Assignment4Component.prototype.ngOnInit = function () {
+    StartpageComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.userService.getData()
-            .subscribe(function (data) {
-            _this.profile = data;
-        });
+        this.heroService.getHeroes()
+            .then(function (heroes) { return _this.heroes = heroes.slice(1, 5); });
     };
-    return Assignment4Component;
+    return StartpageComponent;
 }());
-Assignment4Component = __decorate([
+StartpageComponent = __decorate([
     core_1.Component({
-        selector: 'Assignment4',
-        templateUrl: './Assignment4.component.html',
-        styleUrls: ['./Assignment4.component.css']
+        templateUrl: './startpage.component.html',
+        styleUrls: ['./startpage.component.css']
     }),
-    __metadata("design:paramtypes", [user_service_1.UserService])
-], Assignment4Component);
-exports.Assignment4Component = Assignment4Component;
-//# sourceMappingURL=Assignment4.component.js.map
+    __metadata("design:paramtypes", [hero_service_1.HeroService])
+], StartpageComponent);
+exports.StartpageComponent = StartpageComponent;
+//# sourceMappingURL=startpage.component.js.map

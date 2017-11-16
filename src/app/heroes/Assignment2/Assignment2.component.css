@@ -2,7 +2,7 @@
   margin: 343px;
   border: 1px solid #020202;
   background-color: darkgray;
-  height: 641px;
+  height: auto;
   position: relative;
   top: -264px;
 }
@@ -13,7 +13,7 @@ h6 {
   }
   .imgtext img {
     margin-top: 78px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 300px;
     margin-left: 15px;
     margin-right: 15px;
@@ -23,12 +23,10 @@ h6 {
   color: black;
   margin-left: 20px;
 }
-.container {
-  text-align: center;
-}
+
 .container img {
-    margin: 15px;
-    width: 306px;
+  margin: 4px;
+  width: 375px;
 }
 button {
   position: relative;
@@ -40,5 +38,5 @@ button {
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer; cursor: hand;
-  top: -36px;
+  top: -23px;
 }

@@ -16,7 +16,7 @@ var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
-var dashboard_component_1 = require("./heroes/dashboard/dashboard.component");
+var startpage_component_1 = require("./heroes/startpage/startpage.component");
 var heroes_component_1 = require("./heroes/hero/heroes.component");
 var hero_detail_component_1 = require("./heroes/hero-detail/hero-detail.component");
 var hero_service_1 = require("./heroes/shared/hero.service");
@@ -41,7 +41,7 @@ AppModule = __decorate([
             Assignment3_component_1.Assignment3Component,
             Assignment4_component_1.Assignment4Component,
             app_component_1.AppComponent,
-            dashboard_component_1.DashboardComponent,
+            startpage_component_1.StartpageComponent,
             hero_detail_component_1.HeroDetailComponent,
             heroes_component_1.HeroesComponent,
             hero_search_component_1.HeroSearchComponent,

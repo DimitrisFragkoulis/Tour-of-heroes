@@ -4,11 +4,10 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  // selector: 'my-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.css' ]
+  templateUrl: './startpage.component.html',
+  styleUrls: [ './startpage.component.css' ]
 })
-export class DashboardComponent implements OnInit {
+export class StartpageComponent implements OnInit {
 
   heroes: Hero[] = [];
 

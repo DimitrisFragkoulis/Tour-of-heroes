@@ -15,9 +15,9 @@ var UserService = (function () {
     function UserService(http) {
         this.http = http;
     }
-    UserService.prototype.getUser = function () {
-        console.log("Here");
-        return this.http.get("https://ipinfo.io/json").map(function (response) {
+    UserService.prototype.getData = function () {
+        return this.http.get("https://ipinfo.io/json")
+            .map(function (response) {
             return response.json();
         });
     };
