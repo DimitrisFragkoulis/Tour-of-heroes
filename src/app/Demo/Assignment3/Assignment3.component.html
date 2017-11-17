@@ -1,0 +1,18 @@
+<div class="asc" id="content3"><button routerLink="">X</button>
+    <h1>Javascript - Functions - Events</h1>
+    <div>
+            <form>
+                    <select [(ngModel)]="selectedColor" 
+                            name="selectedColor">
+                        <option [ngValue]="null">Please Choose...</option>
+                        <option *ngFor="let c of color"
+                                [ngValue]="c"
+                                [attr.selected]="c.colorId === selectedColor?.colorId ? true : null ">{{c.name}}</option>
+                    </select>
+                   
+                </form>  
+    <div [ngStyle]="{'background-color': selectedColor?.name }">The selected color is {{selectedColor?.name}}</div>
+    </div>
+    
+        <p>Please select a color</p>
+</div>

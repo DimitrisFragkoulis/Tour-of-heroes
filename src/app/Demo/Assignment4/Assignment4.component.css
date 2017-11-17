@@ -1,0 +1,39 @@
+.asc {
+  margin: 343px;
+  border: 1px solid #020202;
+  background-color: darkgray;
+  height: 580px;
+  position: relative;
+  top: 114px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.data {
+  margin-left: 246px;
+  color: dodgerblue;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 81px;
+}
+
+tr {
+  height: 127px;
+}
+button {
+  float: right;
+  font-family: Arial;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}

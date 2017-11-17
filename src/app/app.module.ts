@@ -1,9 +1,7 @@
-
-import { Assignment4Component } from './heroes/Assignment4/Assignment4.component';
-import { Assignment3Component } from './heroes/Assignment3/Assignment3.component';
-import { Assignment2Component } from './heroes/Assignment2/Assignment2.component';
-import { Assignment1Component } from './heroes/Assignment1/Assignment1.component';
-import { HeroSearchService }    from './heroes/search/hero-search.service';
+import { Assignment4Component } from './Demo/Assignment4/Assignment4.component';
+import { Assignment3Component } from './Demo/Assignment3/Assignment3.component';
+import { Assignment2Component } from './Demo/Assignment2/Assignment2.component';
+import { Assignment1Component } from './Demo/Assignment1/Assignment1.component';
 import { NgModule }             from '@angular/core';
 import { BrowserModule }        from '@angular/platform-browser';
 import { FormsModule }          from '@angular/forms';
@@ -12,12 +10,8 @@ import { HttpModule }           from '@angular/http';
 import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
-import { StartpageComponent }   from './heroes/startpage/startpage.component';
-import { HeroesComponent }      from './heroes/hero/heroes.component';
-import { HeroDetailComponent }  from './heroes/hero-detail/hero-detail.component';
-import { HeroService }          from './heroes/shared/hero.service';
-import { HeroSearchComponent }  from './heroes/search/hero-search.component';
-import { UserService }          from './heroes/shared/user.service';
+import { StartpageComponent }   from './Demo/startpage/startpage.component';
+import { DataService }          from './Demo/service/data.service';
 
 @NgModule({
   imports: [
@@ -33,11 +27,9 @@ import { UserService }          from './heroes/shared/user.service';
     Assignment4Component,
     AppComponent,
     StartpageComponent,
-    HeroDetailComponent,
-    HeroesComponent,
-    HeroSearchComponent,
+    
   ],
-  providers: [ HeroService, HeroSearchService,UserService ],
+  providers: [ DataService ],
   bootstrap: [ AppComponent, Assignment3Component, ]
 })
 export class AppModule { }

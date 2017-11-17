@@ -1,0 +1,55 @@
+.asc{
+  margin: 343px;
+  border: 1px solid #020202;
+  background-color: darkgray;
+  height:  580px;
+  position: relative;
+  top: 114px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+h1
+ {
+   color: black;
+  position: relative;
+  font-size: xx-large;
+  text-align: center;
+  top: 53px;
+ }
+
+p{
+  text-align: center;
+  color:black;
+  font-size: xx-large;
+}
+  
+  #content3 select, option {
+    position: relative;
+    padding: 10px;
+    background: #c9c9c9;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    top: 100px;
+  }
+
+  #content3 div{
+    text-align: center;
+    font-size: xx-large;
+    position: relative;
+    top: 114px;
+}
+button {
+  float: right;
+  font-family: Arial;
+  background-color: rgb(221, 221, 221);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}

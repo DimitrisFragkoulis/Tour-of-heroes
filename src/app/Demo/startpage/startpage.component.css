@@ -1,0 +1,21 @@
+  .startpageContent {
+    font-size: larger;
+    border-radius: 20px;
+    text-align: justify;
+    margin-top: 150px;
+    background-color: #efefef;
+    color: #000000;
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+  .startpageContent img {
+    border-radius: 45px;
+    width: 250px;
+    margin: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+ 
